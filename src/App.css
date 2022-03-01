@@ -1,38 +1,193 @@
-.App {
+.app {
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.title-text {
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+  flex-grow: 8;
+}
+
+.set-row {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  height: 90%;
+}
+
+
+
+.subtitle-text {
+  text-align: center;
+  font-size: 2em;
+  flex-grow: 12;
+}
+
+.footer-bar {
+  text-align: right;
+  padding-right: 10px;
+  background-color: #eee;
+}
+
+
+
+.go-button-container {
+  flex-shrink: 1;
+  height: 100%;
+  color: white;
+  background-color: #6f6;
+  flex-grow: 1;
+  font-size: 24px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.settings-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.student-list {
+  border: 4px solid black;
+  flex-grow: 1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.settings-subcol {
+  flex-grow: 1;
+}
+
+.set-col {
+  height: 100%;
+  background-color: #ccc;
+  flex-grow: 2;
+  margin: 20px;
+}
+
+.settings-button-container {
+  flex-shrink: 1;
+  height: 100%;
   color: white;
+  background-color: #666;
+  flex-grow: 1;
+  font-size: 24px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  text-align: center;
+  transition: 0.2s;
 }
 
-.App-link {
-  color: #61dafb;
+.settings-button-container:hover {
+  cursor: pointer;
+  color: #ccc;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.top-bar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  width: 100%;
+  background-color: #eee;
+}
+
+.table-view {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  flex-grow: 2;
+}
+
+.table-row {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+
+.table-container {
+  margin: 20px;
+  padding: 10px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.table-header {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.table-body {
+  flex-grow: 2;
+  border: 4px solid black;
+  padding: 15px;
+  min-height: 15em;
+  min-width: 10em;
+}
+
+.table-student-label {
+  text-align: center;
+  flex-grow: 2;
+  width: 100%;
+}
+
+.student-label-remove {
+  color: white;
+  flex-shrink: 2;
+  background-color: #cc6666;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+.student-label-remove:hover {
+  color: #ccc;
+  cursor: pointer;
+}
+
+.student-label-add {
+  color: white;
+  flex-shrink: 2;
+  background-color: #66cc66;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 5px;
+  transition: 0.2s;
+  margin: 10px;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.student-label-add:hover {
+  color: #ddd;
+  cursor: pointer;
+}
+
+.settings-student-label-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.settings-student-label {
+  text-align: center;
+  flex-grow: 2;
+  margin-left: 5px;
+}
+
+.context-bar {
+  display: flex;
+  flex-flow: row nowrap;
 }
